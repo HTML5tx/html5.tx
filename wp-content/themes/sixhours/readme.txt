@@ -1,1 +1,0 @@
-Sixhours is a classic, simple text-based theme. Contact calobee@gmail.com with questions, suggestions, or offers of cookies. 
