@@ -8,13 +8,15 @@
 	<link href="/wp-content/themes/HTML5TX/css/html5reset.css" rel="stylesheet" type="text/css" />
 	
 	<?php if (is_search()) { ?>
-	   <meta name="robots" content="noindex, nofollow" /> 
+	   <meta name="robots" content="index, follow" /> 
 	<?php } ?>
 
 	<title>
 		   HTML5tx.com :: 100% Pure
 	</title>
-	
+	<meta name="description" content="A premium grade conference for all things HTML, CSS and Javascript. Join us in 
+Austin, TX on October 8, 2011 for the future of the web." />
+	<meta name="keywords" content="HTML, HTML5, CSS, Javascript, tech, conference, event, Austin, TX, Texas" />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 

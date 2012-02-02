@@ -1,0 +1,261 @@
+/*   
+Theme Name: HTML5.TX
+Theme URI: http://HTML5TX.com
+Description: A premium grade conference for all things html, css and javascript. Original graphics and site layout by <a href="http://driftingcreatives.com" target="_blank">Drifting Creatives</a>, WordPress theme by <a href="http://samhooker.net" target="_blank">Sam Hooker</a> at <a href="http://frogslayer.com" target="_blank">FrogSlayer Software Development</a>.
+Author: Drifting Frog
+Author URI: http://html5tx.com
+Version: 1.0
+*/
+
+@font-face{font-family:'FatboyRegular';
+	src:url('fonts/fatboy/fatboy_husky_beta-webfont.eot');
+	src:url('fonts/fatboy/fatboy_husky_beta-webfont.eot?#iefix') 
+	format('embedded-opentype'),url('fonts/fatboy/fatboy_husky_beta-webfont.woff') 
+	format('woff'),url('fonts/fatboy/fatboy_husky_beta-webfont.ttf') 
+	format('truetype'),url('fonts/fatboy/fatboy_husky_beta-webfont.svg#FatboyRegular') 
+	format('svg');font-weight:normal;font-style:normal
+}
+
+@font-face{font-family:'KnockoutHTF29JuniorLiteweigRg';
+	src:url('fonts/jrLiteweight/knockout-htf29-juniorliteweight-webfont.eot');
+	src:url('fonts/jrLiteweight/knockout-htf29-juniorliteweight-webfont.eot?#iefix') 
+	format('embedded-opentype'),url('fonts/jrLiteweight/knockout-htf29-juniorliteweight-webfont.woff') 
+	format('woff'),url('fonts/jrLiteweight/knockout-htf29-juniorliteweight-webfont.ttf') 
+	format('truetype'),url('fonts/jrLiteweight/knockout-htf29-juniorliteweight-webfont.svg#KnockoutHTF29JuniorLiteweigRg') 
+	format('svg');font-weight:normal;font-style:normal
+}
+
+@font-face {
+    font-family: 'HelveticaLTStdLight';
+    src: url('fonts/helvetica/helveticaltstd-light-webfont.eot');
+    src: url('fonts/helvetica/helveticaltstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helvetica/helveticaltstd-light-webfont.woff') format('woff'),
+         url('fonts/helvetica/helveticaltstd-light-webfont.ttf') format('truetype'),
+         url('fonts/helvetica/helveticaltstd-light-webfont.svg#HelveticaLTStdLight') format('svg');
+    font-weight: normal; font-style: normal;
+}
+
+body{background:#f1fba2;font-family:helvetica,arial,clean,sans-serif}
+.screen-reader-text {position:absolute; left:-9999px; top:-9999px;}
+.clear {clear:both;}
+.group:after {visibility:hidden; display:block; font-size:0; content:""; clear:both; height:0;}
+* html .group, *:first-child+html .group {zoom:1;}
+
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+img, img a {border:none; text-decoration:none;}
+img,header,footer,#topline,#main,#textBar,#trailer{display:block;margin-right:auto;margin-left:auto}
+img#shield{position:absolute;margin-top:-10px;margin-left:-45px}
+#content{margin-top:-388px}
+
+#page-wrap {width:1300px; margin:0 auto;}
+
+#mainHeader {}
+	header{background:#510017;width:1300px;height:39px}
+
+#topline{width:550px;height:39px}
+	#topline div{font-family:FatboyRegular,helvetica,arial,clean,sans-serif;font-size:15px;color:#f16529;float:left;text-align:center;margin:5px;margin-top:12px}
+	#toplineLeft{padding-left:10px;padding-right:50px}
+	#toplineRight{padding-left:15px;padding-right:10px}
+
+#main{width:1300px;padding-top:8px}
+
+#textBar{width:950px;height:100px;margin-top:70px}
+	#textBar div{float:left}
+	#textBar div img{position:relative}
+
+article{width:900px;margin-left:200px;position:relative}
+	article div{float:left;color:#e3f6d6}
+	article div img{margin-top:-75px}
+
+div#description{margin-top:-75px;margin-left:60px;font-family:times new roman;font-size:13pt;font-style:italic}
+time{color:#4b0d2d}
+#location{text-decoration:underline}
+
+div#registerRibbon{margin-top:-85px;margin-left:720px;font-family:arial;font-size:13px}
+	div#registerRibbon p:first-child{font-family:KnockoutHTF29JuniorLiteweigRg,arial,helvetica,clean,sans-serif;color:#630f29;font-weight:bold;font-size:36px}
+	div#registerRibbon a{color:#630f29}
+
+img#tx{margin-top:-90px}
+img#bottomBar{margin-top:30px}
+
+div#trailer{width:1300px}
+	#trailer h1{font-family:KnockoutHTF29JuniorLiteweigRg,arial,helvetica,clean,sans-serif;font-size:21pt;text-align:center;color:#e7f5a1;padding-top:10px}
+	#trailer h1 a{color:#e7f5a1}
+
+#mainContent {margin:20px 100px;}
+
+.sectionTitle {font-family:KnockoutHTF29JuniorLiteweigRg,arial,helvetica,clean,sans-serif; background:url('images/sectionTitleBG.png'); width:652px; height:37px; padding-top:32px;}
+	.sectionTitle span {}
+	.st1 {text-transform:uppercase; color:#f16528; font-size:24pt; font-weight:bold; margin-left:30px;}
+	.st2 {color:#2ec0c7; margin-left:10px; font-size:20pt;}
+
+/*--Details Section--*/
+
+#detailsWrap {overflow:hidden;}
+	#detailsLeft {float:left; width:800px;}
+	#detailsRight{float:left; width:300px;}
+	
+.detailText {color:#631029; font-size:12pt; margin:20px 60px; font-family:HelveticaLTStdLight,arial,clean,sans-serif;}
+.topLink {text-align:center; width:100%; padding-top:20px;}
+	.topLink a{color:#898d66; text-decoration:none; font-weight:bold; font-size:21pt; font-family:KnockoutHTF29JuniorLiteweigRg,arial,helvetica,clean,sans-serif;}
+
+#theTweets {background:url('images/twitterChicken.png') no-repeat top center; margin:10px auto; font-family:HelveticaLTStdLight,arial,clean,sans-serif;}
+	#theTweets h2 {padding-top:240px; text-align:center;}
+	#theTweets h2 a {font-family:KnockoutHTF29JuniorLiteweigRg,arial,helvetica,clean,sans-serif; text-transform:uppercase; color:#f16528; font-size:24pt; font-weight:bold;}
+	ul.twitter {color:#898d66; margin-top:20px;}
+		ul.twitter a {color:#898d66; text-decoration:none; font-weight:bold;}
+	li.twitter-item {margin:10px; padding:0 10px;}
+		li.twitter-item:nth-child(odd) {list-style:url('images/twBlue.png');}
+		li.twitter-item:nth-child(even) {list-style:url('images/twOrange.png');}
+	p.twitter-message {}
+	.twitter-timestamp {}
+	a.twitter-link {}
+	a.twitter-user {}
+
+#socialLinks {text-transform:uppercase; color:#f16528; font-size:32pt; font-weight:bold; font-family:KnockoutHTF29JuniorLiteweigRg,arial,helvetica,clean,sans-serif; text-align:right; margin-top:20px;}
+	#socialLinks * {display:inline-block; vertical-align:middle; margin-right:10px;}
+	
+#whenWhere {width:628px; height:240px; background:url('images/whenGridBG2.png') no-repeat; margin:30px 0; font-family:HelveticaLTStdLight,arial,clean,sans-serif;}
+table#whenGrid {width:100%; height:100%; color:#898d66; font-size:10pt;}
+	#wgRow1 {}
+	#wgRow2 td {padding-top:65px;}
+	#wgRow3 td {padding-top:60px;}
+	#whenGrid td {text-align:center; width:209px; vertical-align:middle;}
+	td#wgTitle {text-transform:uppercase; color:#631029; text-align:left; font-weight:bold;}
+	p#dateHL {text-transform:uppercase; font-size:14pt; font-weight:bold; color:#f16528;}
+	p#timeHL {color:#2ec0c7; font-size:14pt; font-weight:bold;}
+	p#priceHL {color:#2ec0c7; font-size:24pt; font-weight:bolder;}
+
+#theSpeaking {background:url('images/speaking.png') no-repeat; width:590px; height:106px; text-align:right; margin-top:50px;}
+	#theSpeaking p {position:relative; top:100px; font-size:10pt; color:#898d66; font-family:HelveticaLTStdLight,arial,clean,sans-serif;}
+
+/*--Register Section--*/
+
+#registerWrap {overflow:hidden; margin-top:40px;}
+	#registerLeft {float:left; width:800px;}
+	#registerRight{float:left; width:300px;}
+
+.regIcon {float:left; clear:left; width:64px; height:50px; margin:20px 0 10px 60px;}
+.regText {float:left; width:620px; margin:20px 30px 10px 25px; font-size:18pt; font-family:KnockoutHTF29JuniorLiteweigRg,arial,helvetica,clean,sans-serif;}
+	.rtOrange {color:#f16528;}
+	.rtBlue {color:#2ec0c7;}
+
+#regRightLink {background:url('images/regStamp.png') top center no-repeat; position:relative; top:100px;}
+	#regRightLink img {padding:140px 0 10px 0;}
+	#regRightPrice {text-align:center; color:#f16528; font-weight:bold; font-size:42pt; font-family:KnockoutHTF29JuniorLiteweigRg,arial,helvetica,clean,sans-serif;}
+	
+/*--Schedule Section--*/
+
+#scheduleWrap {overflow:hidden; margin-top:40px;}
+
+.schedBlock {float:left; width:500px; margin:40px 10px;}
+	.schedBlock h1 {display:inline-block; float:left; clear:none; padding:12px 20px; color:#665c3e; text-decoration:none; font-weight:bold; font-size:18pt; font-family:KnockoutHTF29JuniorLiteweigRg,arial,helvetica,clean,sans-serif;}
+	.schedBlock h2 {display:inline-block; float:right; clear:none; padding:12px 100px 12px 20px; font-size:14pt; color:#ffffff;}
+	table {clear:both; width:100%;}
+	table tr {background:url('images/divider.png') no-repeat bottom;}
+	table tr td {padding:10px; text-align:left;}
+	.schedBlock td:nth-child(even) {width:65%; font-size:11pt; color:#665c3e;}
+	.schedBlock td:nth-child(odd) {font-weight:bold; font-family:KnockoutHTF29JuniorLiteweigRg,arial,helvetica,clean,sans-serif; font-size:16pt; width:35%;}
+		
+#schedTrack1 {background:url('images/tBanner1.png')no-repeat; clear:left;}
+	#schedTrack1 td:nth-child(odd) {color:#2ec0c7;}
+#schedTrack2 {background:url('images/tBanner2.png')no-repeat;}
+	#schedTrack2 td:nth-child(odd) {color:#f16528;}
+#schedTrack3 {background:url('images/tBanner3.png')no-repeat; clear:right;}
+	#schedTrack3 td:nth-child(odd) {color:#510017;}
+#schedTrack4 {background:url('images/tBanner3.png')no-repeat; clear:right;}
+	#schedTrack4 td:nth-child(odd) {color:#510017;}
+	
+/*--Speakers Section--*/
+
+#speakerWrap {position:absolute; width:100%; clear:both; left:0px; overflow:hidden; margin:40px 0 0 0; background-color:#510017;}
+	.rowWrap {margin:0 auto; width:1100px;}
+
+.speakerRow {overflow:hidden; color:#e6ea99; background:url('images/separator.png') no-repeat bottom;}
+.speakerRow:nth-child(odd) {background-color:#390010;}
+	.speakerPic {float:left; width:200px; padding:20px 10px;}
+	.speakerInfo {float:left; width:300px; padding:20px 10px;}
+		.speakerInfo h3 {font-size:16pt;}
+		.speakerInfo h4 {color:#f16528; margin-top:6px;}
+		.speakerInfo p {margin-top:15px; font-size:11pt;}
+
+.speakerRow a {color:#2ec0c7;}
+.speakerRow a:hover {color:#f16528;}
+
+/*--Footer--*/
+
+#footer {width:1300px; height:662px; text-align:center; padding-top:10px; color:#c9e9a2; background:url('images/footerBG.jpg') no-repeat;}
+	#footer p {}
+
+blockquote {}
+blockquote p {}
+pre {}
+code, tt {}
+form {}
+input[type=text] {}
+textarea {}
+
+ul, ol {margin:0 0 10px 0;}
+
+/*--WordPress Specific--*/
+
+.post {}
+
+.entry {overflow:hidden;}
+	.entry a {}
+	.entry a:hover {}
+	
+#meta {}
+.postmetadata {}
+
+#sidebar {}
+
+.navigation {}
+	.next-posts {}
+	.prev-posts {}
+
+#searchform {}
+	#s {}
+	#searchsubmit {}
+
+ol.commentlist {list-style:none;}
+ol.commentlist li {}
+ol.commentlist li.alt {}
+ol.commentlist li.bypostauthor {}
+ol.commentlist li.byuser {}
+ol.commentlist li.comment-author-admin {}
+ol.commentlist li.comment {border-bottom:1px dotted #666; padding:10px;}
+ol.commentlist li.comment div.comment-author {}
+ol.commentlist li.comment div.vcard {}
+ol.commentlist li.comment div.vcard cite.fn {font-style:normal;}
+ol.commentlist li.comment div.vcard cite.fn a.url {}
+ol.commentlist li.comment div.vcard img.avatar {float:right; margin:0 0 10px 10px;}
+ol.commentlist li.comment div.vcard img.avatar-32 {}
+ol.commentlist li.comment div.vcard img.photo {}
+ol.commentlist li.comment div.vcard span.says {}
+ol.commentlist li.comment div.commentmetadata {}
+ol.commentlist li.comment div.comment-meta {font-size:10px;}
+ol.commentlist li.comment div.comment-meta a {color:#ccc;}
+ol.commentlist li.comment p {}
+ol.commentlist li.comment ul {}
+ol.commentlist li.comment div.reply {font-size:11px;}
+ol.commentlist li.comment div.reply a {font-weight:bold;}
+ol.commentlist li.comment ul.children {list-style:none; margin:10px 0 0;}
+ol.commentlist li.comment ul.children li {}
+ol.commentlist li.comment ul.children li.alt {}
+ol.commentlist li.comment ul.children li.bypostauthor {}
+ol.commentlist li.comment ul.children li.byuser {}
+ol.commentlist li.comment ul.children li.comment {}
+ol.commentlist li.comment ul.children li.comment-author-admin {}
+ol.commentlist li.comment ul.children li.depth-2 {border-left:5px solid #555; margin:0 0 10px 10px;}
+ol.commentlist li.comment ul.children li.depth-3 {border-left:5px solid #999; margin:0 0 10px 10px;}
+ol.commentlist li.comment ul.children li.depth-4 {border-left:5px solid #bbb; margin:0 0 10px 10px;}
+ol.commentlist li.comment ul.children li.depth-5 {}
+ol.commentlist li.comment ul.children li.odd {}
+ol.commentlist li.even {background:#fff;}
+ol.commentlist li.odd {background:#f6f6f6;}
+ol.commentlist li.parent {border-left:5px solid #111;}
+ol.commentlist li.thread-alt {}
+ol.commentlist li.thread-even {}
+ol.commentlist li.thread-odd {}

@@ -34,9 +34,7 @@
 				</tbody>
 			</table>
 		</div>
-		<div id="theSpeaking">
-			<p>Visit <a href="http://bit.ly/SpeakAtHTML5tx">http://bit.ly/SpeakAtHTML5tx</a> and let us know what makes you awesome.</p>
-		</div>
+		<img src="/wp-content/themes/HTML5TX/images/talkAbout.png" />		
 	</div>
 
 	<div id="detailsRight">
