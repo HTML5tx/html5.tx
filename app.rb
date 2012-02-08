@@ -2,12 +2,17 @@ require 'rubygems'
 require 'bundler/setup'
 require 'sinatra'
 require 'pg'
+require 'uri'
 
 conn = nil
 data_path_regex = %r{(\/index|\/videos)} 
 
 before data_path_regex do
-	conn = PGconn.connect(ENV["PG_URL"])
+	uri = URI.parse(ENV["DATABASE_URL"])
+	database = (uri.path || "").split("/")[1]
+	adapter = "postgresql" if adapter == "postgres"
+	
+	conn = PGconn.connect(:dbname => database, :port => uri.port, :host => uri.host)
 end
 
 get '/index' do
