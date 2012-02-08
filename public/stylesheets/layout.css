@@ -16,6 +16,22 @@
 
 /* #Site Styles
 ================================================== */
+#header {
+	background-image: url(/images/meat-market.jpg);
+}
+
+#header img {
+	margin-left: 5%;
+}
+
+#main {
+	display: block;
+}
+
+#small {
+	display: none;
+}
+
 .video {
 	width: 601px;
 	height: 338px; 
@@ -75,6 +91,11 @@
 			width: 400px;
 			height: 225px;		 	
 		}
+
+		#main img {
+			width: 269px;
+			height: 40px;
+		}
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -87,6 +108,15 @@
 		.video {
 			width: 300px;
 			height: 169px;		 	
+		}
+
+		#main {
+			display: none;
+		}
+
+		#small {
+			display: inline;
+			margin-left: 60%;
 		}
 	}
 

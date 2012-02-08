@@ -52,9 +52,9 @@
 /* #Basic Styles
 ================================================== */
 	body {
-		background: #fff;
+		background: #F1FBA2;
 		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		color: #444;
+		color: #631029;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
  }
@@ -63,7 +63,7 @@
 /* #Typography
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
-		color: #181818;
+		color: #631029;
 		font-family: "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;
 		font-weight: normal; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
@@ -80,7 +80,7 @@
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
 
 	em { font-style: italic; }
-	strong { font-weight: bold; color: #333; }
+	strong { font-weight: bold; color: #631029; }
 	small { font-size: 80%; }
 
 /*	Blockquotes  */
@@ -90,12 +90,12 @@
 	blockquote cite:before { content: "\2014 \0020"; }
 	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
 
-	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+	hr { border: solid #631029; border-width: 1px 0 0; clear: both; margin: 10px 0 10px; height: 0; }
 
 
 /* #Links
 ================================================== */
-	a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+	a, a:visited { color: #631029; text-decoration: underline; outline: 0; }
 	a:hover, a:focus { color: #000; }
 	p a, p a:visited { line-height: inherit; }
 
@@ -339,5 +339,3 @@
 	.remove-bottom { margin-bottom: 0 !important; }
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
-
-
