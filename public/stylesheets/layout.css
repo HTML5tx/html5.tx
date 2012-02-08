@@ -20,12 +20,21 @@
 	background-image: url(/images/meat-market.jpg);
 }
 
+#footer {
+	background-image: url(/images/bottom-bar.png);
+}
+
 #header img {
 	margin-left: 5%;
 }
 
 #main {
 	display: block;
+}
+
+#main img {
+	width: 698px;
+	height: 117px;
 }
 
 #small {

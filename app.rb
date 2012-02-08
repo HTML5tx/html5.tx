@@ -24,7 +24,7 @@ get '/index' do
 end
 
 get '/2011' do
-	erb :"2011/index"
+	erb :"2011/index", :layout => :"2011_layout"
 end
 
 get '/signup' do
