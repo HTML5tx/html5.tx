@@ -12,7 +12,9 @@ before data_path_regex do
 	database = (uri.path || "").split("/")[1]
 	adapter = "postgresql" if adapter == "postgres"
 	
-	conn = PGconn.connect(:dbname => database, :port => uri.port, :host => uri.host)
+	conn = PGconn.connect(:dbname => database, :port => uri.port, 
+						  :host => uri.host, :user => uri.user, 
+						  :password => uri.password)
 end
 
 get '/index' do
