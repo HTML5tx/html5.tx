@@ -45,5 +45,5 @@ get '/' do
 end
 
 after data_path_regex do
-	conn.close()
+	if not conn.nil? then conn.close() end
 end
