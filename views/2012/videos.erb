@@ -1,0 +1,8 @@
+	<% count = 1 %>
+	<% videos.count do |video| %>
+		<div class="one-third column">
+			<h3><%= video["title"] %></h3>
+			<p><%= video["description"] %></p>
+			<p><a href="/videos/<%= video["slug"] %>">Watch Now!</a></p>
+		</div>		
+	<% end %>
