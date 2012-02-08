@@ -21,7 +21,19 @@
 }
 
 #footer {
-	background-image: url(/images/bottom-bar.png);
+	text-align:center; 
+	margin-top:25px; 
+	padding-top:10px; 
+	color:#c9e9a2; 
+	background:url('/images/footerBG.jpg') no-repeat;
+}
+
+#footer .dark {
+	color: #631029;
+}
+
+#footer .dark a {
+	text-decoration: none;
 }
 
 #header img {

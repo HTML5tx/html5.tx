@@ -207,7 +207,7 @@ table#whenGrid {width:100%; height:100%; color:#898d66; font-size:10pt;}
 
 /*--Footer--*/
 
-#footer {width:1300px; height:662px; text-align:center; margin-top:25px; padding-top:10px; color:#c9e9a2; background:url('/images/2011/footerBG.jpg') no-repeat;}
+#footer {width:1300px; height:662px; text-align:center; margin-top:25px; padding-top:10px; color:#c9e9a2; background:url('/images/footerBG.jpg') no-repeat;}
 	#footer p {}
 	
 #credits {width:700px; margin:20px auto; overflow:hidden; color:#511628; font-family:KnockoutHTF29JuniorLiteweigRg,arial,helvetica,clean,sans-serif; font-size:20pt;}
