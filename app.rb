@@ -7,7 +7,7 @@ conn = nil
 data_path_regex = %r{(\/index|\/videos)} 
 
 before data_path_regex do
-	conn = PGconn.open(ENV["DB_HOST"], ENV["DB_PORT"], '', '', ENV["DB_NAME"])
+	conn = PGconn.connect(ENV["PG_URL"])
 end
 
 get '/index' do
