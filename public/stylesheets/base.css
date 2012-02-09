@@ -62,6 +62,34 @@
 
 /* #Typography
 ================================================== */
+	@font-face{font-family:'FatboyRegular';
+		src:url('/fonts/fatboy/fatboy_husky_beta-webfont.eot');
+		src:url('/fonts/fatboy/fatboy_husky_beta-webfont.eot?#iefix') 
+		format('embedded-opentype'),url('/fonts/fatboy/fatboy_husky_beta-webfont.woff') 
+		format('woff'),url('/fonts/fatboy/fatboy_husky_beta-webfont.ttf') 
+		format('truetype'),url('/fonts/fatboy/fatboy_husky_beta-webfont.svg#FatboyRegular') 
+		format('svg');font-weight:normal;font-style:normal
+	}
+
+	@font-face{font-family:'KnockoutHTF29JuniorLiteweigRg';
+		src:url('/fonts/jrLiteweight/knockout-htf29-juniorliteweight-webfont.eot');
+		src:url('/fonts/jrLiteweight/knockout-htf29-juniorliteweight-webfont.eot?#iefix') 
+		format('embedded-opentype'),url('/fonts/jrLiteweight/knockout-htf29-juniorliteweight-webfont.woff') 
+		format('woff'),url('/fonts/jrLiteweight/knockout-htf29-juniorliteweight-webfont.ttf') 
+		format('truetype'),url('/fonts/jrLiteweight/knockout-htf29-juniorliteweight-webfont.svg#KnockoutHTF29JuniorLiteweigRg') 
+		format('svg');font-weight:normal;font-style:normal
+	}
+
+	@font-face {
+	    font-family: 'HelveticaLTStdLight';
+	    src: url('/fonts/helvetica/helveticaltstd-light-webfont.eot');
+	    src: url('/fonts/helvetica/helveticaltstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('/fonts/helvetica/helveticaltstd-light-webfont.woff') format('woff'),
+	         url('/fonts/helvetica/helveticaltstd-light-webfont.ttf') format('truetype'),
+	         url('/fonts/helvetica/helveticaltstd-light-webfont.svg#HelveticaLTStdLight') format('svg');
+	    font-weight: normal; font-style: normal;
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #631029;
 		font-family: "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;

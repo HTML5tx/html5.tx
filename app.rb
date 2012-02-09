@@ -7,6 +7,13 @@ require 'uri'
 conn = nil
 data_path_regex = %r{(\/index|\/videos)} 
 
+configure do
+  mime_type :woff, 'application/x-font-woff'
+  mime_type :ttf, 'font/ttf'
+  mime_type :eot, 'font/eot'
+  mime_type :otf, 'font/otf'
+end
+
 before data_path_regex do
 	uri = URI.parse(ENV["DATABASE_URL"])
 	database = (uri.path || "").split("/")[1]
