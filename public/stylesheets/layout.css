@@ -79,6 +79,9 @@ h3, .container h3 a {
 }
 
 .icons {
+	text-align: center; 
+	
+	/* -moz-box-* not present because it doesn't appear to work correctly */
 	display: -webkit-box;
 	-webkit-box-align: center;
 	-webkit-box-pack: center;
@@ -86,11 +89,7 @@ h3, .container h3 a {
 	display: -ms-box;
 	-ms-box-align: center;
 	-ms-box-pack: center;
-
-	display: -moz-box;
-	-moz-box-align: center;
-	-moz-box-pack: center;
-
+	
 	display: -o-box;
 	-o-box-align: center;
 	-o-box-pack: center;
@@ -99,7 +98,6 @@ h3, .container h3 a {
 .icons img {
 	-webkit-box-flex: 0;
 	-ms-box-flex: 0;
-	-moz-box-flex: 0;
 	-o-box-flex: 0;
 }
 
