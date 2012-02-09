@@ -34,14 +34,6 @@ get '/2011' do
 	erb :"2011/index", :layout => :"2011_layout"
 end
 
-get '/signup' do
-	erb :"2012/signup"
-end
-
-post '/signup' do
-
-end
-
 get '/videos' do
 	res = conn.exec('SELECT * FROM video WHERE active = TRUE ORDER BY "postedDate" DESC')
 
