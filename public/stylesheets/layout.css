@@ -67,7 +67,11 @@ h3, .container h3 a {
 
 .video {
 	width: 601px;
-	height: 338px; 
+	height: 338px;
+	
+	-moz-box-shadow: 0 0 10px 5px #F16528;
+	-webkit-box-shadow: 0 0 10px 5px #F16528;
+	box-shadow: 0 0 10px 5px #F16528;
 }
 
 .bare {
@@ -100,7 +104,7 @@ h3, .container h3 a {
 }
 
 .ribbon {
-  background-color: #a00;
+  background-color: #F16528;
   overflow: hidden;
   z-index: 100;
 
