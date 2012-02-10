@@ -25,6 +25,10 @@ before data_path_regex do
 						  :password => uri.password)
 end
 
+before '/videos/rss.xml' do
+	cache_control :public, :must_revalidate, :max_age => 60
+end
+
 get '/index' do
 	res = conn.exec('SELECT title, description, slug FROM video WHERE active = TRUE ORDER BY "postedDate" DESC LIMIT(3)')
 	
@@ -36,6 +40,8 @@ get '/2011' do
 end
 
 get '/videos/rss.xml' do
+	content_type 'application/rss+xml'
+
 	res = conn.exec('SELECT * FROM video WHERE active = TRUE ORDER BY "postedDate" DESC')
 
 	builder do |xml|
