@@ -3,6 +3,7 @@ require 'bundler/setup'
 require 'sinatra'
 require 'pg'
 require 'uri'
+require 'builder'
 
 conn = nil
 data_path_regex = %r{(\/index|\/videos)} 
@@ -15,9 +16,9 @@ configure do
 end
 
 before data_path_regex do
+
 	uri = URI.parse(ENV["DATABASE_URL"])
 	database = (uri.path || "").split("/")[1]
-	adapter = "postgresql" if adapter == "postgres"
 	
 	conn = PGconn.connect(:dbname => database, :port => uri.port, 
 						  :host => uri.host, :user => uri.user, 
@@ -32,6 +33,31 @@ end
 
 get '/2011' do
 	erb :"2011/index", :layout => :"2011_layout"
+end
+
+get '/videos/rss.xml' do
+	res = conn.exec('SELECT * FROM video WHERE active = TRUE ORDER BY "postedDate" DESC')
+
+	builder do |xml|
+		xml.instruct! :xml, :version => '1.0'
+		xml.rss :version => "2.0" do
+			xml.channel do 
+				xml.title "HTML5.tx Videos"
+				xml.description "Videos from the HTML5.tx 2011 Event"
+				xml.link "http://html5tx.com"
+
+				res.each do |video|
+					xml.item do
+						xml.title video["title"]
+						xml.link "http://html5tx/videos/#{video['slug']}"
+						xml.description video["description"]
+						xml.pubDate video["postedDate"]
+						xml.guid "http://html5tx/videos/#{video['slug']}"
+					end
+				end 
+			end
+		end
+	end
 end
 
 get '/videos' do
