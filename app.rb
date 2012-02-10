@@ -49,10 +49,10 @@ get '/videos/rss.xml' do
 				res.each do |video|
 					xml.item do
 						xml.title video["title"]
-						xml.link "http://html5tx/videos/#{video['slug']}"
+						xml.link "http://html5tx.com/videos/#{video['slug']}"
 						xml.description video["description"]
 						xml.pubDate video["postedDate"]
-						xml.guid "http://html5tx/videos/#{video['slug']}"
+						xml.guid "http://html5tx.com/videos/#{video['slug']}"
 					end
 				end 
 			end
