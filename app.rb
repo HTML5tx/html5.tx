@@ -5,7 +5,6 @@ require 'pg'
 require 'uri'
 require 'builder'
 
-conn = nil
 data_path_regex = %r{(\/index|\/videos)} 
 
 configure do
@@ -20,7 +19,7 @@ before data_path_regex do
 	uri = URI.parse(ENV["DATABASE_URL"])
 	database = (uri.path || "").split("/")[1]
 	
-	conn = PGconn.connect(:dbname => database, :port => uri.port, 
+	@conn = PGconn.connect(:dbname => database, :port => uri.port, 
 						  :host => uri.host, :user => uri.user, 
 						  :password => uri.password)
 end
@@ -30,7 +29,7 @@ before '/videos/rss.xml' do
 end
 
 get '/index' do
-	res = conn.exec('SELECT title, description, slug FROM video WHERE active = TRUE ORDER BY "postedDate" DESC LIMIT(3)')
+	res = @conn.exec('SELECT title, description, slug FROM video WHERE active = TRUE ORDER BY "postedDate" DESC LIMIT(3)')
 	
 	erb :"2012/index", :locals => { :videos => res }
 end
@@ -42,7 +41,7 @@ end
 get '/videos/rss.xml' do
 	content_type 'application/rss+xml'
 
-	res = conn.exec('SELECT * FROM video WHERE active = TRUE ORDER BY "postedDate" DESC')
+	res = @conn.exec('SELECT * FROM video WHERE active = TRUE ORDER BY "postedDate" DESC')
 
 	builder do |xml|
 		xml.instruct! :xml, :version => '1.0'
@@ -67,13 +66,13 @@ get '/videos/rss.xml' do
 end
 
 get '/videos' do
-	res = conn.exec('SELECT * FROM video WHERE active = TRUE ORDER BY "postedDate" DESC')
+	res = @conn.exec('SELECT * FROM video WHERE active = TRUE ORDER BY "postedDate" DESC')
 
 	erb :"2012/videos", :locals => { :videos => res }
 end
 
 get '/videos/:slug' do |s|
-	res = conn.exec('SELECT * FROM video WHERE slug = $1', [s])
+	res = @conn.exec('SELECT * FROM video WHERE slug = $1', [s])
 
 	erb :"2012/video", :locals => { :video => res[0] }
 end
@@ -83,5 +82,5 @@ get '/' do
 end
 
 after data_path_regex do
-	if not conn.nil? then conn.close() end
+	if not @conn.nil? then @conn.close() end
 end
