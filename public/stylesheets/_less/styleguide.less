@@ -1,0 +1,113 @@
+//
+
+// TABLE OF CONTENTS
+//
+// 1 - root
+// 2 - headings
+// 3 - type
+// 4 - links
+// 5 - images
+// 6 - lists
+// 7 - tables
+// 8 - buttons
+
+
+
+// 1 - root
+html{ 
+	margin:0; 
+	padding:0;
+}
+
+body{ 
+	margin:0;
+	padding:0;
+}
+
+
+
+// 2 - headings
+
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+
+// 3 - type
+
+p{} 
+	
+address{}
+	
+blockquote{}
+	
+blockquote:before,blockquote:after,q:before,q:after {
+	content : '';
+	content : none;
+}
+
+b, strong {}
+
+small{}
+
+sub, sup {}
+
+sup {}
+
+sub {}
+
+pre,code,kbd,samp { 
+	.monospace;
+}
+
+
+	
+// 4 -links	
+a {color:@link;}
+a:visited {color:darken(@link, 10%);}
+a:hover {color:lighten(@link, 10%);}
+a:focus {outline:thin dotted; color:lighten(@link, 10%);}
+a:hover, a:active{outline:0;}
+
+
+// 5 - images
+
+figure {}
+figure img,figure object,figure embed {}
+figcaption {}
+img {}
+
+// 6 - lists
+
+ul{
+	li{
+		
+	}
+}//end ul
+
+
+ol{
+	li{
+		
+	}
+}//end ol
+
+
+
+// 7 - tables
+
+table{
+	th{}
+	td{}
+}//end table
+
+
+
+// 8 - buttons
+
+a.button{
+	
+	&.primary{}
+	&.cta{}
+}

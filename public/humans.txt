@@ -1,0 +1,34 @@
+/* humanstxt.org */
+
+
+
+/* TEAM */
+
+	Site Design: 
+	Site: 
+	Twitter:
+	Location:
+
+  	Front-End Develpoment: Matt Carver
+  	Site: http://matthewcarver.com
+  	Twitter: @matthew_carver
+  	Location: New York, NY
+
+  	Back-End Develpoment:
+  	Site:
+  	Twitter:
+  	Location:
+
+  	Flash Develpoment:
+  	Site:
+  	Twitter:
+  	Location:
+
+
+/* THANKS */
+  	Names (& URL): 
+
+/* SITE */
+  	Standards: HTML5, CSS3
+  	Components: html5shiv, jQuery
+

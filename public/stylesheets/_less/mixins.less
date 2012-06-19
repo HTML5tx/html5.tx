@@ -1,0 +1,24 @@
+//site fonts
+.decorative{font-family: "bello-pro";}
+.monospace{font-family: "bello-pro";}
+.sans-serif{font-family: "nimbus-sans";}
+.serif{font-family: "Garamond", "Times New Roman", serif;}
+
+
+.sprite(@pos){
+	background:url(../images/sprite.png) no-repeat @pos;
+}
+
+.transition(@transition){
+	transition: @transition;
+	-moz-transition: @transition; 
+	-webkit-transition: @transition;
+	-o-transition: @transition;
+}
+
+.transition-delay(@delay){
+	transition-delay: @delay ;
+	-moz-transition-delay: @delay; /* Firefox 4 */
+	-webkit-transition-delay: @delay; /* Safari and Chrome */
+	-o-transition-delay: @delay ; /* Opera */
+}
