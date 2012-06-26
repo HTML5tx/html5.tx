@@ -5,8 +5,9 @@
 // 1 - root
 // 2 - headers
 // 3 - navigation
-// 4 - article
-// 5 - sections
+// 4 - eagle stuff
+// 5 - article
+// 6 - sections
 // 7 - 
 // 8 - 
 // 9 - 
@@ -15,6 +16,8 @@
 // 1 - root
 body{
 	background:#000;
+	font-size:14px;
+	font-family:Helvetica, sans-serif;
 }
 
 // 2 - headers
@@ -22,17 +25,68 @@ header{
 	&[role="main"]{
 		background:url(_img/s/header.jpg) no-repeat center top;
 		width:100%;
-		height:150px;
+		height:160px;
 		background-size:100% auto;
+		
+//		img.fore{
+//			width:100%;
+//			height:auto;
+//			position:absolute;
+//			z-index:1;
+//		}
+//		img.mid{
+//			width:100%;
+//			height:auto;
+//			position:absolute;
+//			-webkit-mask-box-image: url(_img/background/mask.jpg);
+//		}
+		h1{
+			width:1px;
+			height:1px;
+			overflow:hidden;
+			font-size:0px;
+		}//h1 
+		h2{
+			text-align:center;
+			font-size:2em;
+			padding-top:60px;
+			
+			big{
+
+				font-size:1.5em;
+			}
+		}
 	}// &[role="main"]
-	
+
 }
 
 // 3 - navigation
-nav{}
+nav{
 	
-// 4 - article
+	&[role="main"]{
+		background:url(_img/s/red-orange-wing-l.png) top left no-repeat, url(_img/s/red-orange-wing-r.png) top right  no-repeat, url(_img/s/red-orange-wing-tile.png) top right repeat-x ;
+		width:100%;
+		height:70px;
+		display:block;
+		z-index:1;
+		position:absolute;
+		top:153px
+	}
+	
+}
+
+// 4 - eagle stuff
+.bad-ass-war-eagle{
+	background:url(_img/s/bad-ass-war-eagle.png) top center no-repeat;
+	width:100%;
+	height:300px;
+	z-index:9;
+	position:absolute;
+	top:60px;
+}
+
+// 5 - article
 article{}
 	
-// 5 - sections
+// 6 - sections
 section{}
