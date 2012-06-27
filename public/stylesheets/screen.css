@@ -19,8 +19,8 @@ table{border-collapse:collapse;border-spacing:0;}
 .monospace{font-family:"bello-pro";}
 .sans-serif{font-family:"nimbus-sans";}
 .serif{font-family:"Garamond","Times New Roman",serif;}
-html{margin:0;padding:0;}
-body{margin:0;padding:0;}
+@font-face{font-family:Futura;src:url('_fonts/FuturaStd-Medium.otf');}@font-face{font-family:Futura;font-weight:bold;src:url('_fonts/FuturaStd-Bold.otf');}html{margin:0;padding:0;}
+body{margin:0;padding:0;font-family:Futura, arial;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 pre,code,kbd,samp{font-family:"bello-pro";}
 a{color:#297fcf;}
@@ -28,9 +28,19 @@ a:visited{color:#2165a4;}
 a:hover{color:#4f98dc;}
 a:focus{outline:thin dotted;color:#4f98dc;}
 a:hover,a:active{outline:0;}
-body{background:#000;font-size:14px;font-family:Helvetica,sans-serif;}
-header[role="main"]{background:url(_img/s/header.jpg) no-repeat center top;width:100%;height:160px;background-size:100% auto;}header[role="main"] h1{width:1px;height:1px;overflow:hidden;font-size:0px;}
+@-webkit-keyframes rotate{0%{-webkit-transform:rotate(0deg);} 50%{-webkit-transform:rotate(180deg);} 100%{-webkit-transform:rotate(360deg);}}@-moz-keyframes rotate{0%{-moz-transform:rotate(0deg);} 50%{-moz-transform:rotate(180deg);} 100%{-moz-transform:rotate(360deg);}}.video-wrap{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;}.video-wrap iframe,.video-wrap object,.video-wrap embed{position:absolute;top:0;left:0;width:100%;height:100%;}
+body{background:#000;font-size:14px;}
+#container{width:320px;display:block;position:relative;margin:0 auto;}
+header[role="main"]{background:url(_img/s/banner.jpg) no-repeat center top;width:100%;height:100px;background-size:cover;}header[role="main"] h1{width:1px;height:1px;overflow:hidden;font-size:0px;}
 header[role="main"] h2{text-align:center;font-size:2em;padding-top:60px;}header[role="main"] h2 big{font-size:1.5em;}
-nav[role="main"]{background:url(_img/s/red-orange-wing-l.png) top left no-repeat,url(_img/s/red-orange-wing-r.png) top right no-repeat,url(_img/s/red-orange-wing-tile.png) top right repeat-x;width:100%;height:70px;display:block;z-index:1;position:absolute;top:153px;}
-.bad-ass-war-eagle{background:url(_img/s/bad-ass-war-eagle.png) top center no-repeat;width:100%;height:300px;z-index:9;position:absolute;top:60px;}
+nav[role="main"]{background:url(_img/s/red-orange-wing-l.png) top left no-repeat,url(_img/s/red-orange-wing-r.png) top right no-repeat,url(_img/s/red-orange-wing-tile.png) top right repeat-x;width:100%;height:70px;display:block;z-index:1;position:absolute;top:100px;}
+nav.footer{border-bottom:3px solid #ccc;}nav.footer a{width:50%;display:block;float:left;text-align:center;color:#fff;text-decoration:none;font-weight:bold;padding:5px 0;}
+.bad-ass-war-eagle{background:url(_img/s/bad-ass-war-eagle.png) top center no-repeat;width:100%;height:300px;z-index:9;position:absolute;top:7px;z-index:99;}
+.cog{background:url(_img/s/cog.png) no-repeat left top;width:40px;height:40px;position:absolute;display:block;z-index:99;top:157px;left:50%;margin-left:-20px;z-index:9;-webkit-animation:rotate 5s infinite;-webkit-animation-timing-function:linear;}
+section.video-masthead{position:relative;top:80px;}
+section.social{position:relative;top:80px;display:block;}section.social .lower-logo,section.social a.blog,section.social .lower-cogs{width:100%;height:100px;background:url(_img/m/html5-lower-logo.jpg) no-repeat center center;background-size:auto 100%;margin-bottom:20px;width:100%;height:100px;display:block;position:relative;}
+section.social a.blog{text-indent:-99999px;background:url(_img/m/read-blog.jpg) no-repeat center center;}
+section.social .lower-cogs{background:url(_img/m/lower-cogs.jpg) no-repeat center center;}section.social .lower-cogs .twitter,section.social .lower-cogs .facebook{text-indent:-99999px;width:50px;height:50px;display:block;position:absolute;left:110px;}
+section.social .lower-cogs .facebook{top:35px;left:160px;}
+footer[role="main"]{position:relative;display:block;top:120px;}
 @media only screen and (min-width:480px){}@media only screen and (min-width:600px){}@media only screen and (min-width:768px){}@media only screen and (min-width:992px){}@media only screen and (min-width:1280px){}@media only screen and (min-width:1382px){}@media only screen and (-webkit-min-device-pixel-ratio:1.5){body{outline:1px solid red;width:100%;}}
