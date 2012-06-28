@@ -23,10 +23,10 @@ table{border-collapse:collapse;border-spacing:0;}
 body{margin:0;padding:0;font-family:Futura, arial;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 pre,code,kbd,samp{font-family:"bello-pro";}
-a{color:#297fcf;}
-a:visited{color:#2165a4;}
-a:hover{color:#4f98dc;}
-a:focus{outline:thin dotted;color:#4f98dc;}
+a{color:#ffffff;}
+a:visited{color:#e6e6e6;}
+a:hover{color:#760202;}
+a:focus{outline:thin dotted;color:#ffffff;}
 a:hover,a:active{outline:0;}
 @-webkit-keyframes rotate{0%{-webkit-transform:rotate(0deg);} 50%{-webkit-transform:rotate(180deg);} 100%{-webkit-transform:rotate(360deg);}}@-moz-keyframes rotate{0%{-moz-transform:rotate(0deg);} 50%{-moz-transform:rotate(180deg);} 100%{-moz-transform:rotate(360deg);}}.video-wrap{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;}.video-wrap iframe,.video-wrap object,.video-wrap embed{position:absolute;top:0;left:0;width:100%;height:100%;}
 body{background:#000;font-size:14px;}
@@ -34,7 +34,7 @@ body{background:#000;font-size:14px;}
 header[role="main"]{background:url(_img/s/banner.jpg) no-repeat center top;width:100%;height:100px;background-size:cover;}header[role="main"] h1{width:1px;height:1px;overflow:hidden;font-size:0px;}
 header[role="main"] h2{text-align:center;font-size:2em;padding-top:60px;}header[role="main"] h2 big{font-size:1.5em;}
 nav[role="main"]{background:url(_img/s/red-orange-wing-l.png) top left no-repeat,url(_img/s/red-orange-wing-r.png) top right no-repeat,url(_img/s/red-orange-wing-tile.png) top right repeat-x;width:100%;height:70px;display:block;z-index:1;position:absolute;top:100px;}
-nav.footer{border-bottom:3px solid #ccc;}nav.footer a{width:50%;display:block;float:left;text-align:center;color:#fff;text-decoration:none;font-weight:bold;padding:5px 0;}
+nav.footer{display:block;float:left;padding-bottom:10px;border-bottom:3px solid #2c2c2c;}nav.footer a{width:50%;display:block;float:left;text-align:center;color:#fff;text-decoration:none;text-transform:uppercase;font-weight:bold;padding:5px 0;}nav.footer a:hover{color:#760202;}
 .bad-ass-war-eagle{background:url(_img/s/bad-ass-war-eagle.png) top center no-repeat;width:100%;height:300px;z-index:9;position:absolute;top:7px;z-index:99;}
 .cog{background:url(_img/s/cog.png) no-repeat left top;width:40px;height:40px;position:absolute;display:block;z-index:99;top:157px;left:50%;margin-left:-20px;z-index:9;-webkit-animation:rotate 5s infinite;-webkit-animation-timing-function:linear;}
 section.video-masthead{position:relative;top:80px;}
@@ -42,5 +42,6 @@ section.social{position:relative;top:80px;display:block;}section.social .lower-l
 section.social a.blog{text-indent:-99999px;background:url(_img/m/read-blog.jpg) no-repeat center center;}
 section.social .lower-cogs{background:url(_img/m/lower-cogs.jpg) no-repeat center center;}section.social .lower-cogs .twitter,section.social .lower-cogs .facebook{text-indent:-99999px;width:50px;height:50px;display:block;position:absolute;left:110px;}
 section.social .lower-cogs .facebook{top:35px;left:160px;}
-footer[role="main"]{position:relative;display:block;top:120px;}
-@media only screen and (min-width:480px){}@media only screen and (min-width:600px){}@media only screen and (min-width:768px){}@media only screen and (min-width:992px){}@media only screen and (min-width:1280px){}@media only screen and (min-width:1382px){}@media only screen and (-webkit-min-device-pixel-ratio:1.5){body{outline:1px solid red;width:100%;}}
+footer[role="main"]{position:relative;display:block;top:120px;}footer[role="main"] .copyright,footer[role="main"] a.credit{display:block;width:100%;color:#fff;display:block;float:left;text-align:center;color:#fff;text-decoration:none;text-transform:uppercase;font-weight:bold;padding:10px 0;}
+footer[role="main"] .bar{height:3px;width:100%;display:block;float:left;background:#2c2c2c;}
+@media only screen and (min-width:480px){#container{width:480px;} section.social .lower-logo,section.social a.blog{width:48%;float:left;background-size:100% auto;} section.social .lower-logo{margin-right:4%;} section.social .lower-cogs{width:100%;float:left;} section.social .lower-cogs .twitter{left:191px;} section.social .lower-cogs .facebook{left:243px;} footer[role="main"] .copyright,footer[role="main"] a.credit,footer[role="main"] .bar{width:33.33%;} footer[role="main"] .bar{margin-top:20px;}}@media only screen and (min-width:600px){}@media only screen and (min-width:768px){}@media only screen and (min-width:992px){}@media only screen and (min-width:1280px){}@media only screen and (min-width:1382px){}@media only screen and (-webkit-min-device-pixel-ratio:1.5){body{outline:1px solid red;width:100%;}}

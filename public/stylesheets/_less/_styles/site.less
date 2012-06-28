@@ -115,6 +115,11 @@ nav{
 	}
 	
 	&.footer{
+		display:block;
+		float:left;
+		padding-bottom:10px;
+		border-bottom:3px solid #2c2c2c;
+	
 		a{
 			width:50%;
 			display:block;
@@ -122,11 +127,14 @@ nav{
 			text-align:center;
 			color:#fff;
 			text-decoration:none;
+			text-transform:uppercase;
 			font-weight:bold;
 			padding:5px 0;
+			
+			&:hover{color:@red;}
+			
 		}
 		
-		border-bottom:3px solid #ccc;
 	}
 	
 }
@@ -215,6 +223,28 @@ footer{
 		position:relative;
 		display:block;
 		top:120px;
+		
+		.copyright, a.credit{
+			display:block;
+			width:100%;
+			color:#fff;
+			display:block;
+			float:left;
+			text-align:center;
+			color:#fff;
+			text-decoration:none;
+			text-transform:uppercase;
+			font-weight:bold;
+			padding:10px 0;
+		}
+		
+		.bar{
+			height:3px;
+			width:100%;
+			display:block;
+			float:left;
+			background:#2c2c2c;
+		}
 		
 	}
 }
