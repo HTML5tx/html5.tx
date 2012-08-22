@@ -1,1 +1,53 @@
 // Tablet Portrait (768px)
+
+#container{width:768px;}
+.hide-on-phones{display:block;}
+
+
+nav[role="main"]{
+	background:url(_img/m/red-orange-wing-r.png) top left no-repeat,url(_img/m/red-orange-wing-l.png) top right no-repeat;
+	height: 137px;
+	top:261px;
+	
+	.silver-nav{
+		position:absolute;
+		top:-62px;
+		height:90px;
+		width:100%;
+		
+		.left-set, .right-set{
+			background:url(_img/l/silver-nav.png) left top no-repeat;
+			width:50%;
+			position:absolute;
+			height:90px;
+			display:block;
+			float:left;
+			
+			a{
+				color:#000;
+				text-transform:uppercase;
+				font-weight:bold;
+				
+				&:hover{
+					color:@red;
+				}
+			}
+			
+		}
+		
+		.right-set{
+			background:url(_img/l/silver-nav.png) right top no-repeat;
+			float:right;
+			right:0;
+		}
+	}
+}//nav[role="main"]
+
+.bad-ass-war-eagle{
+	background:url(_img/l/bad-ass-war-eagle.png) top center no-repeat;
+	height:420px;
+	top: 78px;
+	width:504px;
+	left:50%;
+	margin-left:-252px;
+}
