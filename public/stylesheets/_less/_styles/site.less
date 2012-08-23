@@ -95,13 +95,24 @@ header{
 nav{
 	
 	&[role="main"]{
-		background:url(_img/s/red-orange-wing-l.png) top left no-repeat, url(_img/s/red-orange-wing-r.png) top right  no-repeat, url(_img/s/red-orange-wing-tile.png) top right repeat-x ;
 		width:100%;
 		height:70px;
 		display:block;
 		z-index:1;
 		position:absolute;
-		top:100px
+		top:100px;
+
+		.left-set, .right-set{ 
+			position:absolute;
+			width:50%;
+			height:80px;
+			display:block; 
+		}
+
+		.left-set{background:url(_img/s/nav-background.jpg) no-repeat top left; left:0;}
+		.right-set{background:url(_img/s/nav-background.jpg) no-repeat top right; right:0;}
+		
+
 	}
 	
 	&.footer{
@@ -157,9 +168,19 @@ nav{
 
 // 5 - sections
 section{
-	&.video-masthead{
+	&.masthead{
 		position:relative;
-		top:80px;
+		top:90px;
+
+		.callout{
+			padding:30px 15px 20px;
+
+			p{
+				font-size:1.2em;
+				text-align:center;
+			}
+		}
+
 	}//.video-masthead
 	
 	&.social{
