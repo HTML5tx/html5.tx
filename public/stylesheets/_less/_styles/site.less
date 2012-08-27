@@ -5,6 +5,8 @@
 // 1 - root
 //	1.1 animations
 //	1.2 media wrappers
+//  1.3 helpers
+//    1.3.1 play-button
 // 2 - headers
 // 3 - navigation
 // 4 - eagle stuff
@@ -49,7 +51,53 @@
 			height: 100%;
 		}
 
+	}//.video-wrap
+
+
+// 1.3 helpers
+
+// 1.3.1 play button
+.pay-wrapper{
+	width:55px;
+	height:55px;
+	display:block;
+	float:left;
+
+	margin-left:-30px;
+
+	position:relative;
+	left:50%;
+
+	.play-button{
+		width:100%;
+		height:100%;
+		display:block;
+
+		position:absolute;
+		z-index:999;
+
+		background:url(_img/play-btn.png) no-repeat left 3px;
+
+		text-decoration: none;
 	}
+
+	.play-cog{
+		width:100%;
+		height:100%;
+		display:block;
+
+		position:absolute;
+
+		background:url(_img/cog-white.png) no-repeat top left;
+
+		-webkit-animation: rotate 10s infinite;
+ 		-webkit-animation-timing-function: linear;
+
+	}
+
+}
+	
+
 
 body{
 	background:#000;
@@ -223,6 +271,63 @@ section{
 			}
 		}
 	}
+
+	&.mid{
+		width:100%;
+		height:60px;
+		display:block;
+
+		margin-bottom: 40px;
+
+		position:relative;
+		top:100px;
+
+		background:url(_img/dark-grey-texture.jpg) repeat;
+
+		&:before, &:after{
+			content:' ';
+			width:60px;
+			height:60px;
+			display:block;
+
+			position: absolute;
+			top:0;
+			z-index:999;
+
+			
+		}
+
+		&:before{
+			right:0;
+			background:url(_img/three-bars.gif) no-repeat #000 top right;
+		}
+
+		&:after{
+			left:0;
+			background:url(_img/three-bars.gif) no-repeat #000 top left;
+		}
+
+	}//.mid
+
+	&.speakers{
+		width:100%;
+		display:block;
+
+		margin:150px 0;
+
+		.speaker-wrap{
+			width:48%;
+			display:block;
+			float:left;
+			margin-left:2%;
+
+			img{
+				width:100%;
+				height:auto;
+			}
+		}
+	}
+
 }
 
 
