@@ -5,7 +5,6 @@
 
 
 nav[role="main"]{
-	background:url(_img/m/red-orange-wing-r.png) top left no-repeat,url(_img/m/red-orange-wing-l.png) top right no-repeat;
 	height: 137px;
 	top:261px;
 	
@@ -16,7 +15,6 @@ nav[role="main"]{
 		width:100%;
 		
 		.left-set, .right-set{
-			background:url(_img/l/silver-nav.png) left top no-repeat;
 			width:50%;
 			position:absolute;
 			height:90px;
@@ -36,7 +34,6 @@ nav[role="main"]{
 		}
 		
 		.right-set{
-			background:url(_img/l/silver-nav.png) right top no-repeat;
 			float:right;
 			right:0;
 		}
@@ -45,9 +42,75 @@ nav[role="main"]{
 
 .bad-ass-war-eagle{
 	background:url(_img/l/bad-ass-war-eagle.png) top center no-repeat;
-	height:420px;
-	top: 78px;
-	width:504px;
+	background-size:100% auto;
+	height:250px;
+	top: 100px;
+	width:300px;
 	left:50%;
-	margin-left:-252px;
+	margin-left:-150px;
 }
+.cog {
+top: 275px;
+}
+
+nav[role="main"] .silver-nav{
+	.left-set, .right-set{
+	div{
+		top:15px;
+		position:absolute;
+
+		a{
+			float:left;
+			color:@red;
+			text-decoration:none;
+			padding-right:10px;
+			padding-left:10px;
+			margin: 0;
+			font-size:1.20em;
+
+			border-right:1px solid #b8b8b8;
+			border-left:1px solid #e9e8e8;
+
+			&:first-child{
+				border-left:none;
+			}
+			&:last-child{
+				border-right:none;
+			}
+		}
+	}
+
+
+	} //.left-set, .right-set
+
+
+	.left-set{
+		div{
+		left:30px;
+		}
+	}//.left-set
+
+	.right-set{
+		div{right:30px;}
+
+	}//.right-set
+}//nav
+
+section.masthead{height: 250px;}
+
+section.masthead .callout:first-child {
+position: absolute;
+left: 0;
+width: 45.5%;
+}
+
+section.masthead .callout:last-child {
+position: absolute;
+right: 0;
+width: 45.5%;
+}
+
+section.speakers .speaker-wrap .big-cog {top: 142px;}
+section.social .lower-cogs .twitter {left: 67px;}
+section.social .lower-cogs .facebook {left: 113px;}
+nav.footer{width: 100%;}
