@@ -15,7 +15,7 @@
 // 6 - lists
 // 7 - tables
 // 8 - buttons
-// 9 - callouts
+// 9 - callouts and inner content
 
 
 @font-face { font-family: Futura; src: url('_fonts/FuturaStd-Medium.otf'); } 
@@ -108,6 +108,15 @@ ol{
 	}
 }//end ol
 
+ol.list-links,
+ul.list-links {
+	a {
+		color: @red;
+		text-decoration: none;
+
+		padding-left: 10px;
+	}
+}
 
 
 // 7 - tables
@@ -140,9 +149,10 @@ a.button{
 	&.cta{}
 }
 
-// 9 - callouts
+// 9 - callouts and inner content
 
-div.callout{
+div.callout,
+.inner-content {
 	background:url(_img/dark-grey-texture.jpg) repeat;
 	padding:10px;
 	margin:10px 0 ;

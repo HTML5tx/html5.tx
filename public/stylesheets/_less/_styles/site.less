@@ -12,7 +12,7 @@
 // 4 - eagle stuff
 // 5 - sections
 // 6 - footers
-// 7 - 
+// 7 - forms
 // 8 - 
 
 
@@ -147,6 +147,20 @@ header{
 	}// &[role="main"]
 
 }
+
+	// 2.1 - inner headers
+	[role="main"] header {
+		padding-bottom: 20px;
+
+		h1 {
+			color: @red;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		h2 {
+			font-weight: normal;
+		}
+	}
 
 // 3 - navigation
 nav{
@@ -416,6 +430,30 @@ section{
 		}
 	}// .sponsors
 
+	&.inner {
+
+		line-height: 24px;
+
+		// grid
+		.left-em {
+			float: left;
+			width: 73%;
+		}
+		.right-deem {
+			float: right;
+			width: 23%;
+		}
+
+		// headers
+		div > h2,
+		aside > h2 {
+			font-weight: bold;
+			text-transform: uppercase;
+
+			padding-top: 20px;
+		}
+	}
+
 }
 
 
@@ -451,4 +489,19 @@ footer{
 		}
 		
 	}
+}
+
+
+// 7 - forms
+
+input[type="search"] {
+	background: #cacaca;
+	border: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+
+	font-size: 14px;
+
+	padding: 8px 0;
+	width: 100%;
 }
