@@ -22,6 +22,7 @@
 	<!-- js -->
 	<script src="/javascripts/_lib/modernizr-2.0.6.min.js"></script> <!-- http://modernizr.com/docs/#whatis -->
 	<script src="/javascripts/_lib/jquery-1.6.2.min.js"></script>
+    <script src="/javascripts/application.js?v=sdhgdfgh"></script> 
 	
 	<!-- icons -->
 		<!-- For iPhone 4 -->
@@ -99,25 +100,45 @@
     <!-- .mid -->
     <section class="speakers">
         <div class="speaker-wrap hover">
-            <figure><img src="/images/speaker.jpg"><span class="static"></span></figure>
+            <figure>
+                <img src="/images/s/speaker.jpg" 
+                    data-m-src="/images/m/speaker.jpg" 
+                    data-l-src="/images/l/speaker.jpg">
+                <span class="static"></span>
+            </figure>
             <span class="name">Frank Smith</span>
             <span class="title">CEO of RADICAL AWESOME WEB 2.0</span>
             <div class="big-cog"></div>
         </div>
         <div class="speaker-wrap">
-            <figure><img src="/images/speaker.jpg"><span class="static"></span></figure>
+            <figure>
+                <img src="/images/s/speaker.jpg" 
+                    data-m-src="/images/m/speaker.jpg" 
+                    data-l-src="/images/l/speaker.jpg">
+                <span class="static"></span>
+            </figure>
             <span class="name">Frank Smith</span>
             <span class="title">CEO of RADICAL AWESOME WEB 2.0</span>
             <div class="big-cog"></div>
         </div>
         <div class="speaker-wrap">
-            <figure><img src="/images/speaker.jpg"><span class="static"></span></figure>
+            <figure>
+                <img src="/images/s/speaker.jpg" 
+                    data-m-src="/images/m/speaker.jpg" 
+                    data-l-src="/images/l/speaker.jpg">
+                <span class="static"></span>
+            </figure>
             <span class="name">Frank Smith</span>
             <span class="title">CEO of RADICAL AWESOME WEB 2.0</span>
             <div class="big-cog"></div>
         </div>
         <div class="speaker-wrap">
-            <figure><img src="/images/speaker.jpg"><span class="static"></span></figure>
+            <figure>
+                <img src="/images/s/speaker.jpg" 
+                    data-m-src="/images/m/speaker.jpg" 
+                    data-l-src="/images/l/speaker.jpg">
+                <span class="static"></span>
+            </figure>
             <span class="name">Frank Smith</span>
             <span class="title">CEO of RADICAL AWESOME WEB 2.0</span>
             <div class="big-cog"></div>
@@ -127,22 +148,30 @@
     <section class="sponsors">
         <div class="sponsor">
             <figure>
-                <img src="//placehold.it/300x200/5a3805/94723f&text=sponsor">
+                <img src="//placehold.it/150x105/5a3805/94723f&text=small-sponsor"
+                    data-m-src="//placehold.it/300x200/5a3805/94723f&text=medium-sponsor"
+                    data-l-src="//placehold.it/400x250/5a3805/94723f&text=large-sponsor">
             </figure>
         </div>
         <div class="sponsor">
             <figure>
-                <img src="//placehold.it/300x200/5a3805/94723f&text=sponsor">
+                <img src="//placehold.it/150x105/5a3805/94723f&text=small-sponsor"
+                    data-m-src="//placehold.it/300x200/5a3805/94723f&text=medium-sponsor"
+                    data-l-src="//placehold.it/400x250/5a3805/94723f&text=large-sponsor">
             </figure>
         </div>
         <div class="sponsor">
             <figure>
-                <img src="//placehold.it/300x200/5a3805/94723f&text=sponsor">
+                <img src="//placehold.it/150x105/5a3805/94723f&text=small-sponsor"
+                    data-m-src="//placehold.it/300x200/5a3805/94723f&text=medium-sponsor"
+                    data-l-src="//placehold.it/400x250/5a3805/94723f&text=large-sponsor">
             </figure>
         </div>
         <div class="sponsor">
             <figure>
-                <img src="//placehold.it/300x200/5a3805/94723f&text=sponsor">
+                <img src="//placehold.it/150x105/5a3805/94723f&text=small-sponsor"
+                    data-m-src="//placehold.it/300x200/5a3805/94723f&text=medium-sponsor"
+                    data-l-src="//placehold.it/400x250/5a3805/94723f&text=large-sponsor">
             </figure>
         </div>
     </section>
@@ -188,11 +217,6 @@
 // iOS scale bug fix
 MBP.scaleFix();
 
-// Respond.js
-yepnope({
-	test : Modernizr.mq('(only all)'),
-	nope : ['/javascripts/_lib/respond.min.js']
-});
 </script>
 
 <script>
